@@ -4,7 +4,7 @@ import pandas as pd
 
 def setup_chroma_db(collection_name="medical_qa_collection", max_rows=15000, persist_path = ""):
     
-    data = load_dataset("keivalya/MedQuad-MedicalQnADataset", split='train')
+    data = pd.read_csv('path\to\dataset\')
     data = data.to_pandas()
     data["id"] = data.index
     
